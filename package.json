@@ -2,30 +2,35 @@
   "name": "calendar",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
   "scripts": {
-    "webpack": "webpack --watch",
-    "serve": "serve",
-    "start": "npm run webpack | npm run serve",
+    "server": "webpack-dev-server",
+    "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "luxon": "^0.4.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "webpack-cli": "^2.0.13"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
     "css": "^2.2.1",
     "css-loader": "^0.28.9",
     "less": "^3.0.1",
     "less-loader": "^4.0.5",
+    "ramda": "^0.25.0",
+    "react-styleguidist": "^7.0.8",
     "style": "0.0.3",
-    "style-loader": "^0.20.2"
+    "style-loader": "^0.20.2",
+    "webpack": "^4.3.0",
+    "webpack-dev-server": "^3.1.1"
   }
 }
